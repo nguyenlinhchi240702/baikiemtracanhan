@@ -11,31 +11,34 @@
     <h1>Create NhanVien</h1>
     <form th:action="@{/nhanviens/create}" th:object="${nhanvien}" method="post" class="form">
         <div class="col-6 mb-3">
-            <label class="form-label" for="ma">Ma nhan vien:</label>
+            <label class="form-label" for="ma">Mã nhân viên:</label>
             <input class="form-control" type="text" th:field="*{ma}" id="ma">
 
         </div>
         <div class="col-6 mb-3">
-            <label class="form-label" for="ten">Ten Nhan Vien:</label>
+            <label class="form-label" for="ten">Tên nhân viên:</label>
             <input class="form-control" type="text" th:field="*{ten}" id="ten">
 
         </div>
         <div class="col-6 mb-3">
-            <label class="form-label" for="noi">Noi sinh:</label>
+            <label class="form-label" for="noi">Nơi sinh:</label>
             <input class="form-control" type="text" th:field="*{noi}" id="noi">
 
         </div>
         <div class="col-6 mb-3">
-            <label class="form-label" for="luong">Luong:</label>
+            <label class="form-label" for="luong">Lương:</label>
             <input class="form-control" type="number" th:field="*{luong}" id="luong">
         </div>
 <!--        <div class="col-6 mb-3">-->
 <!--            <label class="form-label" for="phongban">:</label>-->
 <!--            <input class="form-control" type="text" th:field="*{phongban}" id="phongban">-->
 <!--        </div>-->
-
         <div class="col-6 mb-3">
-            <label class="form-label" for="phongban">Phong ban:</label>
+            <label class="form-label" for="phai">Giới tính:</label>
+            <input class="form-control" type="text" th:field="*{phai}" id="phai">
+        </div>
+        <div class="col-6 mb-3">
+            <label class="form-label" for="phongban">Phòng Ban:</label>
             <select class="form-control" id="phongban" name="phongban">
                 <option value="">--Select Category--</option>
                 <option th:each="phongban : ${phongbans}" th:value="${phongban.id}"

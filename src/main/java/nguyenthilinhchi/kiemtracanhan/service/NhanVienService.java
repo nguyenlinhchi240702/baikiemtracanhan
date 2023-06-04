@@ -28,7 +28,7 @@ public class NhanVienService {
     public void updateNhanVien(NhanVien nhanvien){
         repo.save(nhanvien);
     }
-    public void deleteProduct(int id){
+    public void deleteNhanVien(int id){
         repo.deleteById(id);
     }
 

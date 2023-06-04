@@ -61,7 +61,7 @@ public class NhanVienController {
     }
     @GetMapping("/delete/{id}")
     public String deleteProduct(@PathVariable(value="id") int id){
-        nhanVienService.deleteProduct(id);
+        nhanVienService.deleteNhanVien(id);
         return "redirect:/nhanviens";
     }
 }

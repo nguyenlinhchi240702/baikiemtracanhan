@@ -21,7 +21,7 @@ public class PhongBanService {
         if(optionalPhongBan.isPresent()){
             return optionalPhongBan.get();
         }else{
-            throw new RuntimeException("Category not found");
+            throw new RuntimeException("PhongBan not found");
         }
     }
     public void addCategory(PhongBan category){

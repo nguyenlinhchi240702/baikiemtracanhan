@@ -28,4 +28,7 @@ public class NhanVien {
 //    private String phongban;
     @ManyToOne
     private  PhongBan phongban;
+    @ManyToOne
+    @JoinColumn(name="user_id",referencedColumnName = "id")
+    private User user;
 }
